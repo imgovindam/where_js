@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+   background-image: url(./architecture-3095716_1920.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   position: relative;
+   height: 100vh;
+   width: 100%;
+}
+
+#open-btn {
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    height: 80px;
+    width: 200px;
+    background-color: transparent;
+    color: rgb(222, 199, 68);
+  border: 3px solid #fb9d9d;
+  border-radius: 10px;
+  background-color: rgb(95, 95, 95);
+  box-shadow: 0 0 12px;
+  transition: 0.5s;
+}
+#open-btn :hover {
+   height: 70px;
+   border: 3px solid black;
+   border-radius: 7px;
+   background-color: rgb(248, 230, 177);
+   color: black;
+   cursor: pointer;
+  transition: 0.4 ease-out;
+  align-items: center;
+  justify-content: center;
+
+
+   
+
+   
+}
+p {
+    font-size: 20px;
+
+    font-family: sans-serif;
+ 
+}
+#modal {
+    position: absolute;
+    top: 50%;
+    border-radius: 10px;
+    border: 2px solid wheat;
+    left: 30%;
+    background-color: #f5d6d6;
+   
+    height: 50px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    padding: 20px auto;
+    text-align: center;
+    animation: animatemodal;
+    animation-duration: .5s;
+   
+}
+#close-btn {
+    font-size: 50px;
+    font-weight: bolder;
+    color: black;
+    justify-content: space-between;
+    cursor: pointer;
+}
+#modal-conatiner {
+    /* display: none; */
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    z-index: 1;
+
+}
+
+
+@keyframes animatemodal {
+
+    from {
+        top: -300px;
+        opacity: 0;
+
+    }
+    to {
+        top: 50%px;
+        opacity: 1;
+    }
+    
+}
